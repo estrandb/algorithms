@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1480827056 source:/home/sig/projects/algorithms/main.cpp
+	<iostream>
+
+1481001678 source:/home/sig/projects/algorithms/src/ShortPath.cpp
+	"ShortPath.h"
+
+1481001677 /home/sig/projects/algorithms/include/ShortPath.h
+	<stdint.h>
+
