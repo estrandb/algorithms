@@ -8,7 +8,7 @@ class ShortPath
     public:
         ShortPath(uint32_t vertices){X = new uint32_t[vertices];}
         virtual ~ShortPath(){delete[] X;}
-
+        int test;
     protected:
 
     private:
