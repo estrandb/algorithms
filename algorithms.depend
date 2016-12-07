@@ -8,3 +8,14 @@
 1481001677 /home/sig/projects/algorithms/include/ShortPath.h
 	<stdint.h>
 
+1481084635 source:/home/sig/projects/algorithms/src/Utilities.cpp
+	"Utilities.h"
+
+1481084623 /home/sig/projects/algorithms/include/Utilities.h
+	<string>
+	<iostream>
+	<vector>
+	<stdint.h>
+	<fstream>
+	<sstream>
+
