@@ -10,7 +10,7 @@ Utilities::~Utilities()
     //dtor
 }
 
-void Utilities::AdjListToVec(std::vector<std::vector<uint32_t> >& vertices, char* filepath)
+void Utilities::AdjListToVec(std::vector<std::vector<uint32_t> >& vertices, std::string filepath)
 {
 	std::string vector;
 

@@ -4,17 +4,18 @@
 #include <string>
 #include <iostream>
 #include <vector>
-#include <stdint.h>
 #include <fstream>
 #include <sstream>
+#include <memory>
 
+#include <stdint.h>
 
 class Utilities
 {
     public:
         Utilities();
         virtual ~Utilities();
-        void AdjListToVec(std::vector<std::vector<uint32_t> >& vertices, char* filepath);
+        void AdjListToVec(std::vector<std::vector<uint32_t> >& vertices, std::string filepath);
         void PrintAdjList(std::vector<std::vector<uint32_t> >& vertices, uint32_t printnum);
 
     protected:
