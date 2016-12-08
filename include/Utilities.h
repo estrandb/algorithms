@@ -16,6 +16,7 @@ class Utilities
         Utilities();
         virtual ~Utilities();
         void AdjListToVec(std::vector<std::vector<uint32_t> >& vertices, std::string filepath);
+        void AdjLengthListToVec(std::vector<std::vector<uint32_t> >& vertices, std::string filepath);
         void PrintAdjList(std::vector<std::vector<uint32_t> >& vertices, uint32_t printnum);
 
     protected:

@@ -29,6 +29,34 @@ void Utilities::AdjListToVec(std::vector<std::vector<uint32_t> >& vertices, std:
 	}
 }
 
+void Utilities::AdjLengthListToVec(std::vector<std::vector<uint32_t> >& vertices, std::string filepath)
+{
+    /*
+        takes data in the form {(source vertex) (tail vertex),(length of edge) ... (tail vertex),(length of edge)}
+    */
+
+    std::string vector;
+
+	std::ifstream file(filepath);
+	while (getline(file,vector))
+	{
+		std::vector<uint32_t> lineData;
+		std::stringstream lineStream(vector);
+
+		uint32_t value;
+		while (lineStream >> value)
+		{
+			lineData.push_back(value);
+			if (lineStream.peek() == ',')
+			{
+                lineStream.ignore();
+			}
+		}
+		lineData.erase(lineData.begin());
+		vertices.push_back(lineData);
+	}
+}
+
 void Utilities::PrintAdjList(std::vector<std::vector<uint32_t> >& vertices, uint32_t printnum)
 {
 	for (uint32_t i = 0 ; i < printnum ; i++)
