@@ -13,7 +13,7 @@ int main()
 
     std::unique_ptr<ShortPath> sp(new ShortPath());
 
-    while (0){}
+    while (1){}
 
 
     return 0;
