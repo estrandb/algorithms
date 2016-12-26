@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1481475921 source:/home/sig/projects/algorithms/main.cpp
+1482789591 source:/home/sig/projects/algorithms/main.cpp
 	<Utilities.h>
-	<ShortPath.h>
 
-1481235611 source:/home/sig/projects/algorithms/src/ShortPath.cpp
+1481476778 source:/home/sig/projects/algorithms/src/ShortPath.cpp
 	"ShortPath.h"
 
 1481476748 /home/sig/projects/algorithms/include/ShortPath.h
@@ -21,4 +20,23 @@
 	<sstream>
 	<memory>
 	<stdint.h>
+
+1482790118 source:/home/sig/projects/algorithms/src/Dijkstra.cpp
+	<iostream>
+	"BinaryHeap.h"
+	"AdjListNode.h"
+	"Utilities.h"
+	"Dijkstra.h"
+
+1482789874 /home/sig/projects/data_structures/include/BinaryHeap.h
+	<vector>
+	"TreeNode.h"
+
+1482181391 /home/sig/projects/data_structures/include/TreeNode.h
+
+1482268544 /home/sig/projects/algorithms/include/AdjListNode.h
+	<stdint.h>
+	<vector>
+
+1482789441 /home/sig/projects/algorithms/include/Dijkstra.h
 

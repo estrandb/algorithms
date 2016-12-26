@@ -12,8 +12,15 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-Weffc++" />
+					<Add option="-std=c++14" />
 					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="/home/sig/projects/algorithms/include" />
 				</Compiler>
+				<Linker>
+					<Add directory="/home/sig/projects/algorithms/include" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/algorithms" prefix_auto="1" extension_auto="1" />
@@ -22,6 +29,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +40,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/AdjListNode.h" />
+		<Unit filename="include/ShortPath.h" />
+		<Unit filename="include/Utilities.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ShortPath.cpp" />
+		<Unit filename="src/Utilities.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
