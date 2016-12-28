@@ -17,8 +17,10 @@
 					<Add option="-g" />
 					<Add directory="include" />
 					<Add directory="/home/sig/projects/algorithms/include" />
+					<Add directory="/home/sig/projects/data_structures/include" />
 				</Compiler>
 				<Linker>
+					<Add library="/home/sig/projects/data_structures/obj/Debug/src/BinaryHeap.o" />
 					<Add directory="/home/sig/projects/algorithms/include" />
 				</Linker>
 			</Target>
@@ -41,10 +43,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/AdjListNode.h" />
-		<Unit filename="include/ShortPath.h" />
+		<Unit filename="include/Dijkstra.h" />
 		<Unit filename="include/Utilities.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/ShortPath.cpp" />
+		<Unit filename="src/Dijkstra.cpp" />
 		<Unit filename="src/Utilities.cpp" />
 		<Extensions>
 			<code_completion />

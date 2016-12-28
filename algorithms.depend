@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1482789591 source:/home/sig/projects/algorithms/main.cpp
+1482818102 source:/home/sig/projects/algorithms/main.cpp
 	<Utilities.h>
+	"Dijkstra.h"
 
 1481476778 source:/home/sig/projects/algorithms/src/ShortPath.cpp
 	"ShortPath.h"
@@ -21,7 +22,7 @@
 	<memory>
 	<stdint.h>
 
-1482790118 source:/home/sig/projects/algorithms/src/Dijkstra.cpp
+1482899662 source:/home/sig/projects/algorithms/src/Dijkstra.cpp
 	<iostream>
 	"BinaryHeap.h"
 	"AdjListNode.h"
@@ -38,5 +39,6 @@
 	<stdint.h>
 	<vector>
 
-1482789441 /home/sig/projects/algorithms/include/Dijkstra.h
+1482818080 /home/sig/projects/algorithms/include/Dijkstra.h
+	"AdjListNode.h"
 

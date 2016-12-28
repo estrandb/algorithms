@@ -75,25 +75,22 @@ int Dijkstra::Run()
             if ((i%2) == 0)
             {
                 uint32_t adjNodeIndex = vertices[currentNode.index][i] - 1;
-
-                if (procVert[adjNodeIndex] == 1)
-                    continue;
-
                 uint32_t adjNodeEdgeLength = vertices[currentNode.index][i+1];
                 if (computedShortestPaths[adjNodeIndex] > (computedShortestPaths[currentNode.index] + adjNodeEdgeLength))
                 {
                     computedShortestPaths[adjNodeIndex] = computedShortestPaths[currentNode.index] + adjNodeEdgeLength;
+                    auto node = new AdjListNode(adjNodeIndex, numVertices);
+                    InitializeNode(vertices[adjNodeIndex], node);
+                    binheap->InsertNode(*node, computedShortestPaths[adjNodeIndex]);
                 }
-                auto node = new AdjListNode(adjNodeIndex, numVertices);
-                InitializeNode(vertices[adjNodeIndex], node);
-                binheap->InsertNode(*node, computedShortestPaths[adjNodeIndex]);
+
             }
         }
 
 
     }
     //std::cout << computedShortestPaths[0] << ',' << computedShortestPaths[1] << ',' << computedShortestPaths[2] << ',' << computedShortestPaths[3] << std::endl;
-    std::cout << computedShortestPaths[6] << ',' << computedShortestPaths[36] << ',' << computedShortestPaths[58] << ',' << computedShortestPaths[81] << ',' << computedShortestPaths[98] << ',' << computedShortestPaths[114] << ',' << computedShortestPaths[132] << ',' << computedShortestPaths[164] << ',' << computedShortestPaths[187] << ',' << computedShortestPaths[196] << ',' << std::endl;
+    std::cout << computedShortestPaths[6] << ',' << computedShortestPaths[36] << ',' << computedShortestPaths[58] << ',' << computedShortestPaths[81] << ',' << computedShortestPaths[98] << ',' << computedShortestPaths[114] << ',' << computedShortestPaths[132] << ',' << computedShortestPaths[164] << ',' << computedShortestPaths[187] << ',' << computedShortestPaths[196] << std::endl;
     delete[] &vertices;
     delete[] &processedVertices;
     delete[] &procVert;
