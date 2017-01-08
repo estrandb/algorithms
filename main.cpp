@@ -1,9 +1,9 @@
 #include <Utilities.h>
-#include "Dijkstra.h"
+#include "TwoSum.h"
 
 int main()
 {
-    auto dijkstra = new Dijkstra();
-    dijkstra->Run();
-    return 0;
+    TwoSum* twoSum = new TwoSum();
+    twoSum->Run();
+    delete twoSum;
 }

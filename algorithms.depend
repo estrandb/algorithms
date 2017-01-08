@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
-1482818102 source:/home/sig/projects/algorithms/main.cpp
+1483489387 source:/home/sig/projects/algorithms/main.cpp
 	<Utilities.h>
-	"Dijkstra.h"
+	"TwoSum.h"
 
 1481476778 source:/home/sig/projects/algorithms/src/ShortPath.cpp
 	"ShortPath.h"
@@ -10,19 +10,20 @@
 	<vector>
 	<stdint.h>
 
-1481231098 source:/home/sig/projects/algorithms/src/Utilities.cpp
+1483826337 source:/home/sig/projects/algorithms/src/Utilities.cpp
 	"Utilities.h"
 
-1481229680 /home/sig/projects/algorithms/include/Utilities.h
+1483826360 /home/sig/projects/algorithms/include/Utilities.h
 	<string>
 	<iostream>
 	<vector>
 	<fstream>
 	<sstream>
 	<memory>
+	<unordered_map>
 	<stdint.h>
 
-1482899662 source:/home/sig/projects/algorithms/src/Dijkstra.cpp
+1482903324 source:/home/sig/projects/algorithms/src/Dijkstra.cpp
 	<iostream>
 	"BinaryHeap.h"
 	"AdjListNode.h"
@@ -41,4 +42,10 @@
 
 1482818080 /home/sig/projects/algorithms/include/Dijkstra.h
 	"AdjListNode.h"
+
+1483826422 source:/home/sig/projects/algorithms/src/TwoSum.cpp
+	"TwoSum.h"
+	"Utilities.h"
+
+1483486565 /home/sig/projects/algorithms/include/TwoSum.h
 

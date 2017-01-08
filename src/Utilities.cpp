@@ -10,6 +10,22 @@ Utilities::~Utilities()
     //dtor
 }
 
+void Utilities::HashThis(std::unordered_map<int64_t, int64_t>& hashmap, std::string filepath)
+{
+	std::string vector;
+
+	std::ifstream file(filepath);
+	while (getline(file,vector))
+	{
+        int64_t value;
+        std::stringstream lineStream(vector);
+        while (lineStream >> value)
+        {
+            hashmap[value] = value;
+        }
+	}
+}
+
 void Utilities::AdjListToVec(std::vector<std::vector<uint32_t> >& vertices, std::string filepath)
 {
 	std::string vector;
