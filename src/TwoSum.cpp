@@ -19,6 +19,7 @@ void TwoSum::Run()
     std::string const filePath = "/home/sig/projects/algorithms/prob1.txt";
 
     util->HashThis(*hmap, filePath);
+    std::cout << hmap->size() << std::endl;
 
     delete hmap;
     delete util;
