@@ -60,6 +60,6 @@ void TwoSum::Run()
     std::cout << counter << std::endl;
 
     delete hmap;
-    //delete hmapUsed;
+    delete hmapUsed;
     delete util;
 }
